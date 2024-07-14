@@ -1,0 +1,10 @@
+Exp 14 portfolio
+Sudo apt-get update -y
+Sudo apt install docker.io
+sudo systemctl stop docker
+sudo docker build -t server .
+sudo docker images
+sudo docker run -d -p 80:80 server
+sudo systemctl start docker
+sudo systemctl enable docker
+
