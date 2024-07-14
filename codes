@@ -9,7 +9,7 @@ cd /usr/share/nginx/html
 nano index.html
 
 
-2.ubuntu
+2.ubuntu  Exp 4
 
 cd downloads
 ssh client path
@@ -23,7 +23,7 @@ echo "<html><body><h1>Your name</h1></body></html>" >index.html
 sudo docker run -d -p 80:80 -v $(pwd)/index.html:/usr/share/nginx/html/index.html --name web nginx
 
 
-3.EFS-NFS
+3.EFS-NFS  Exp 9
 
 Instance 1
 cd downloads
@@ -40,7 +40,7 @@ and same for instance 2 keep working on 2 instances at a time.
 
 
 
-4.DynamoDB
+4.DynamoDB Exp 14
 
 import boto3
 from uuid import uuid4
@@ -69,7 +69,7 @@ def lambda_handler(event, context):
         )
 
 
-5.Docker-Personal portfolio
+5.Docker-Personal portfolio  Exp 15
 cd downloads
 ssh client path
 Sudo apt-get update -y
