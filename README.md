@@ -34,7 +34,7 @@
 </html>
 
 
-2. Update the portfolio page by adding styles to it. Add a contact Us form as well.
+## 2. Update the portfolio page by adding styles to it. Add a contact Us form as well.
 <!DOCTYPE html>
 <html lang="en">
 
@@ -171,11 +171,11 @@
 
 
 
-3. Update the same page using external style sheets or move the added styles to a CSS file and add it to the HTML page
+## 3. Update the same page using external style sheets or move the added styles to a CSS file and add it to the HTML page
 A.	Just separate CSS in experiment 2 into an external file and we have experiment 3
 
 
-4. Update the portfolio page to use Bootstrap.
+## 4. Update the portfolio page to use Bootstrap.
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -235,7 +235,7 @@ A.	Just separate CSS in experiment 2 into an external file and we have experimen
 
 
 
-5. Create Home, About Us, Products, Partners, Contact Us pages for a static e-commerce website using Bootstrap. Add a gallery page using Bootstrap grid model. Add Navbar, header and footer to all pages. Add a Login link (Modal).
+## 5. Create Home, About Us, Products, Partners, Contact Us pages for a static e-commerce website using Bootstrap. Add a gallery page using Bootstrap grid model. Add Navbar, header and footer to all pages. Add a Login link (Modal).
 <!DOCTYPE html>
 <html lang="en">
 
@@ -340,8 +340,8 @@ A.	Just separate CSS in experiment 2 into an external file and we have experimen
 
 
 
-6. . Add a weather component to the home page of the above website, using ReactJS.
-Weather component.js
+## 6. . Add a weather component to the home page of the above website, using ReactJS.
+### Weather component.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -377,7 +377,7 @@ const WeatherComponent = () => {
 export default WeatherComponent;
 
 
-App.js
+### App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import WebsiteContent from './components/WebsiteContent';
@@ -396,8 +396,8 @@ export default App;
 
 
  
-7. Update the ‘contact us’ page to a ReactJS component. An email should be sent each time contact us form is submitted
-ContactUs.js
+## 7. Update the ‘contact us’ page to a ReactJS component. An email should be sent each time contact us form is submitted
+### ContactUs.js
 import React, { useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -441,8 +441,8 @@ export default ContactUs;
 
 
 
-8. Add a Login component using ReactJS. User should be able to login, using pre-defined logins. Session should be maintained using react hooks
-AuthContext.js
+## 8. Add a Login component using ReactJS. User should be able to login, using pre-defined logins. Session should be maintained using react hooks
+### AuthContext.js
 import React, { createContext, useState, useEffect } from 'react';
 
 // Create a context for authentication
@@ -493,7 +493,7 @@ const AuthProvider = ({ children }) => {
 export default AuthProvider;
 
 
-Login.js
+### Login.js
 import React, { useState, useContext } from 'react';
 import { AuthContext } from './AuthContext';
 
@@ -553,7 +553,7 @@ const LoginPage = () => {
 export default LoginPage;
 
 
-App.js
+### App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import LoginPage from './components/Login';
@@ -569,41 +569,37 @@ function App() {
   );
 }
 export default App;
-9. Each page in the site should be a React JS component and the elements in each page should be child components.
-HomeChild.js
+
+
+
+## 9. Each page in the site should be a React JS component and the elements in each page should be child components.
+### HomeChild.js
 import React from 'react';
-
 const HomeChild = () => <div>Home Child Content</div>;
-
 export default HomeChild;
 
 
-Home.js
+### Home.js
 import React from 'react';
 import HomeChild from './HomeChild';
-
 const Home = () => (
   <div>
     <h2>Home Page</h2>
     <HomeChild />
   </div>
 );
-
 export default Home;
 
 
-AboutChild.js
+### AboutChild.js
 import React from 'react';
-
 const AboutChild = () => <div>About Child Content</div>;
-
 export default AboutChild;
 
 
-About.js
+### About.js
 import React from 'react';
 import AboutChild from './AboutChild';
-
 const About = () => (
   <div>
     <h2>About Page</h2>
@@ -614,13 +610,12 @@ const About = () => (
 export default About;
 
 
-App.js
+### App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import WebsiteContent from './components/WebsiteContent';
 import Home from './components/Home';
 import About from './components/About';
-
 function App() {
   return (
       <div className="App">
@@ -634,8 +629,8 @@ export default App;
 
 
 
-10. React Routing should be used to take care of routing from browser location bar and also from Navbar
-App.js
+## 10. React Routing should be used to take care of routing from browser location bar and also from Navbar
+### App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
@@ -663,7 +658,7 @@ function App() {
 export default App;
 
 
-Navbar.js
+### Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -691,7 +686,7 @@ const Navbar = () => (
 export default Navbar;
 
 
-Home1.js
+### Home1.js
 import React from 'react';
 
 const Home1 = () => (
@@ -704,7 +699,7 @@ const Home1 = () => (
 export default Home1;
 
 
-Contact1.js
+### Contact1.js
 import React from 'react';
 
 const About1 = () => (
