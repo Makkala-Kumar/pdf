@@ -1,4 +1,4 @@
-1.Linux
+1.Linux  exp 3
 
 cd downloads
 ssh client path
@@ -37,6 +37,21 @@ echo "This from efs1" >/mnt/efs1/file1.txt
 ls -1 /mnt/efs1
 cat /mnt/efs1/file1.txt
 and same for instance 2 keep working on 2 instances at a time.
+
+
+S3 Web Hosting  Exp 10
+{
+ "Version": "2012-10-17",
+ "Statement": [
+ {
+ "Sid": "PublicReadGetObject",
+ "Effect": "Allow",
+ "Principal": "*",
+ "Action": "s3:GetObject",
+ "Resource": "arn:aws:s3:::my-public-bucket-unique-name/*"
+ }
+ ]
+}
 
 
 
